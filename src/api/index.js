@@ -9,3 +9,19 @@ export const UserLogin = (data) => {
     data,
   })
 }
+
+export const getMenuList = ()=>{
+    return  request({
+        url:'menus',
+        method:'get'
+    })
+}
+
+export const getUserList = (params)=>{
+    return request({
+        url:'users',
+        method:'get',
+        params
+    })
+}
+

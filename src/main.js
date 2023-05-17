@@ -7,10 +7,11 @@ import 'element-ui/lib/theme-chalk/index.css';
 import './assets/fonts/iconfont.css'
 // 导入全局样式表
 import './assets/css/global.css'
+import request from './api/request';
 
+Vue.prototype.$http = request
 Vue.config.productionTip = false;
 Vue.use(ElementUI)
-
 
 new Vue({
   router,
